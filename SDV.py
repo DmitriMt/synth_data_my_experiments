@@ -7,8 +7,10 @@ import numpy as objnumpy
 import pandas as objpandas
 from sklearn.base import BaseEstimator
 from sklearn.base import TransformerMixin
-from sdv.tabular import GaussianCopula
-from sdv.evaluation import evaluate
+#from sdv.tabular import GaussianCopula
+from sdv.single_table import GaussianCopulaSynthesizer as GaussianCopula
+# from sdv.evaluation import evaluate
+from sdv.evaluation.single_table import evaluate_quality as evaluate
 import time
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')

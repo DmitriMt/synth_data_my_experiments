@@ -20,7 +20,8 @@ import os, multiprocessing, time
 from sklearn.base import BaseEstimator
 from sklearn.base import TransformerMixin
 from collections import defaultdict
-from sdv.evaluation import evaluate
+# from sdv.evaluation import evaluate
+from sdv.evaluation.single_table import evaluate_quality as evaluate
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 import seaborn as sns

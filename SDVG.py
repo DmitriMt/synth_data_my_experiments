@@ -12,7 +12,8 @@ import numpy as objnumpy
 import pandas as objpandas
 from sklearn.base import BaseEstimator
 from sklearn.base import TransformerMixin
-from sdv.tabular import CTGAN
+#from sdv.tabular import CTGAN
+from sdv.single_table import CTGANSynthesizer as CTGAN
 from sdv.evaluation import evaluate
 import time
 import matplotlib.pyplot as plt

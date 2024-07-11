@@ -18,15 +18,16 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 from keras.layers import Dense
 from keras.layers import LSTM
-from keras.layers.embeddings import Embedding
-from keras.layers.core import Dense, Activation
+from keras.layers import Embedding
+from keras.layers import Dense, Activation
 from sklearn.model_selection import train_test_split
 from DataSynthesizer.DataDescriber import DataDescriber
 from DataSynthesizer.DataGenerator import DataGenerator
 from DataSynthesizer.ModelInspector import ModelInspector
 from DataSynthesizer.lib.utils import read_json_file, display_bayesian_network
 from DataSynthesizer.datatypes.utils.DataType import DataType
-from sdv.evaluation import evaluate
+# from sdv.evaluation import evaluate
+from sdv.evaluation.single_table import evaluate_quality as evaluate
 import datetime
 from datetime import timedelta
 from datetime import date
